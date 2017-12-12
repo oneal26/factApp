@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  question1: 1
+  question1answer: MyText
+  question2: 1
+  question2answer: MyText
+  question3: 1
+  question3answer: MyText
+  question4: 1
+  question4answer: MyText
+  question5: 1
+  question5answer: MyText
+  question6: 1
+  question6answer: MyText
+
+two:
+  title: MyString
+  author: MyString
+  question1: 1
+  question1answer: MyText
+  question2: 1
+  question2answer: MyText
+  question3: 1
+  question3answer: MyText
+  question4: 1
+  question4answer: MyText
+  question5: 1
+  question5answer: MyText
+  question6: 1
+  question6answer: MyText

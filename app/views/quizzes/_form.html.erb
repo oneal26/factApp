@@ -1,0 +1,87 @@
+<%= form_with(model: quiz, local: true) do |form| %>
+  <% if quiz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quiz.errors.count, "error") %> prohibited this quiz from being saved:</h2>
+
+      <ul>
+      <% quiz.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :quiz_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author, id: :quiz_author %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question1 %>
+    <%= form.number_field :question1, id: :quiz_question1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question1answer %>
+    <%= form.text_area :question1answer, id: :quiz_question1answer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question2 %>
+    <%= form.number_field :question2, id: :quiz_question2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question2answer %>
+    <%= form.text_area :question2answer, id: :quiz_question2answer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question3 %>
+    <%= form.number_field :question3, id: :quiz_question3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question3answer %>
+    <%= form.text_area :question3answer, id: :quiz_question3answer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question4 %>
+    <%= form.number_field :question4, id: :quiz_question4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question4answer %>
+    <%= form.text_area :question4answer, id: :quiz_question4answer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question5 %>
+    <%= form.number_field :question5, id: :quiz_question5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question5answer %>
+    <%= form.text_area :question5answer, id: :quiz_question5answer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question6 %>
+    <%= form.number_field :question6, id: :quiz_question6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question6answer %>
+    <%= form.text_area :question6answer, id: :quiz_question6answer %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

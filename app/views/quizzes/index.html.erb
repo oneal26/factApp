@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Quizzes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Question1</th>
+      <th>Question1answer</th>
+      <th>Question2</th>
+      <th>Question2answer</th>
+      <th>Question3</th>
+      <th>Question3answer</th>
+      <th>Question4</th>
+      <th>Question4answer</th>
+      <th>Question5</th>
+      <th>Question5answer</th>
+      <th>Question6</th>
+      <th>Question6answer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quizzes.each do |quiz| %>
+      <tr>
+        <td><%= quiz.title %></td>
+        <td><%= quiz.author %></td>
+        <td><%= quiz.question1 %></td>
+        <td><%= quiz.question1answer %></td>
+        <td><%= quiz.question2 %></td>
+        <td><%= quiz.question2answer %></td>
+        <td><%= quiz.question3 %></td>
+        <td><%= quiz.question3answer %></td>
+        <td><%= quiz.question4 %></td>
+        <td><%= quiz.question4answer %></td>
+        <td><%= quiz.question5 %></td>
+        <td><%= quiz.question5answer %></td>
+        <td><%= quiz.question6 %></td>
+        <td><%= quiz.question6answer %></td>
+        <td><%= link_to 'Show', quiz %></td>
+        <td><%= link_to 'Edit', edit_quiz_path(quiz) %></td>
+        <td><%= link_to 'Destroy', quiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quiz', new_quiz_path %>
