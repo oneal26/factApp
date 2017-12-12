@@ -16,3 +16,10 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.jumbotron {
+	background-image: url('bricks.jpg');
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}

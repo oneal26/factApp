@@ -11,77 +11,77 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :quiz_title %>
+    <%= form.text_field :title, id: :quiz_title, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :author %>
-    <%= form.text_field :author, id: :quiz_author %>
+    <%= form.text_field :author, id: :quiz_author, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question1 %>
-    <%= form.number_field :question1, id: :quiz_question1 %>
+    <%= form.number_field :question1, id: :quiz_question1, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question1answer %>
-    <%= form.text_area :question1answer, id: :quiz_question1answer %>
+    <%= form.text_area :question1answer, id: :quiz_question1answer, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question2 %>
-    <%= form.number_field :question2, id: :quiz_question2 %>
+    <%= form.number_field :question2, id: :quiz_question2, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question2answer %>
-    <%= form.text_area :question2answer, id: :quiz_question2answer %>
+    <%= form.text_area :question2answer, id: :quiz_question2answer, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question3 %>
-    <%= form.number_field :question3, id: :quiz_question3 %>
+    <%= form.number_field :question3, id: :quiz_question3, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question3answer %>
-    <%= form.text_area :question3answer, id: :quiz_question3answer %>
+    <%= form.text_area :question3answer, id: :quiz_question3answer, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question4 %>
-    <%= form.number_field :question4, id: :quiz_question4 %>
+    <%= form.number_field :question4, id: :quiz_question4, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question4answer %>
-    <%= form.text_area :question4answer, id: :quiz_question4answer %>
+    <%= form.text_area :question4answer, id: :quiz_question4answer, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question5 %>
-    <%= form.number_field :question5, id: :quiz_question5 %>
+    <%= form.number_field :question5, id: :quiz_question5, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question5answer %>
-    <%= form.text_area :question5answer, id: :quiz_question5answer %>
+    <%= form.text_area :question5answer, id: :quiz_question5answer, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question6 %>
-    <%= form.number_field :question6, id: :quiz_question6 %>
+    <%= form.number_field :question6, id: :quiz_question6, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :question6answer %>
-    <%= form.text_area :question6answer, id: :quiz_question6answer %>
+    <%= form.text_area :question6answer, id: :quiz_question6answer, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>
