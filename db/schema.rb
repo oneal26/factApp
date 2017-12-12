@@ -10,25 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171212130344) do
+ActiveRecord::Schema.define(version: 20171212152634) do
 
   create_table "quizzes", force: :cascade do |t|
     t.string "title"
     t.string "author"
-    t.integer "question1"
     t.text "question1answer"
-    t.integer "question2"
     t.text "question2answer"
-    t.integer "question3"
     t.text "question3answer"
-    t.integer "question4"
     t.text "question4answer"
-    t.integer "question5"
     t.text "question5answer"
-    t.integer "question6"
     t.text "question6answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "question1"
+    t.string "question2"
+    t.string "question3"
+    t.string "question4"
+    t.string "question5"
+    t.string "question6"
   end
 
 end
